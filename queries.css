@@ -1,0 +1,29 @@
+@media (max-width: 101em) {
+  .hero-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 104em) {
+  .headline {
+    font-size: 5.2rem;
+  }
+}
+
+@media (max-width: 112em) {
+  .how-to-txt {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 110em) {
+  .Features div p {
+    font-size: 2.4em;
+  }
+}
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
