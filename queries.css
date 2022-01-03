@@ -1,3 +1,5 @@
+/******FOR SMALL DESKTOPS******/
+
 @media (max-width: 101em) {
   .hero-text {
     font-size: 3rem;
@@ -18,7 +20,50 @@
 
 @media (max-width: 110em) {
   .Features div p {
-    font-size: 2.4em;
+    font-size: 2em;
+  }
+}
+
+/******FOR LANDSCAPE TABLETS******/
+/*Making everything smaller*/
+@media (max-width: 75em) {
+  /*9px/16px = 0.5625*/
+  html {
+    font-size: 56.25%;
+  }
+  .logo-text {
+    font-size: 8.6rem;
+  }
+  .headline {
+    font-size: 4.4rem;
+  }
+
+  .second-features {
+    column-gap: 4.4rem;
+  }
+
+  .about-headline {
+    padding: 3.2rem 2.4rem;
+  }
+  .about-txt {
+    padding: 0 2.4rem 3.2rem;
+  }
+
+  .from-txt {
+    padding: 0 3.2rem 7.2rem;
+  }
+
+  .cta {
+    margin: 0 3.2rem 0;
+  }
+
+  .text-cuffs {
+    left: 79%;
+  }
+
+  .Hero-Section {
+    padding-right: 3.2rem;
+    line-height: 1.2;
   }
 }
 /* FONT SIZE SYSTEM (px)
