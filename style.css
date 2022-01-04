@@ -34,12 +34,14 @@ Greys*/
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Pushster", serif;
   line-height: 1;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -49,6 +51,7 @@ body {
 /*******GENERAL******/
 
 /*******NAVIGATION****/
+
 nav,
 nav a:link,
 nav a:visited {
@@ -71,13 +74,36 @@ nav a:active {
 
 .nav-header {
   height: 9.6rem;
+  display: flex;
+  justify-content: right;
 }
+
 .main-nav {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
+.mobile-nav {
+  font-size: 3rem;
+  padding-top: 1.4rem;
+  padding-right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 1%;
+  right: 5%;
+}
+
+.close-mobile-menu {
+  display: none;
+}
+
+.open-mobile-menu[name="menu-outline"] {
+  display: none;
+}
 /*******NAVIGATION****/
 
 /******SINGLE COMPONENTS****/
@@ -185,7 +211,7 @@ header {
   grid-row: 3;
   margin-left: 2rem;
   font-size: 2rem;
-  font-family: Playfair Display;
+  font-family: montesrrat;
   line-height: 1.5;
 }
 
