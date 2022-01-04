@@ -236,6 +236,164 @@
 
 /******FOR PHONES******/
 @media (max-width: 39em) {
+  .logo-text {
+    display: inline-block;
+    font-size: 6.2rem;
+    left: 30%;
+  }
+
+  .headline {
+    font-size: 2.4rem;
+  }
+
+  .Hero-Section {
+    position: absolute;
+    top: 28%;
+    left: 60%;
+  }
+  .hero-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  main section a p:last-child {
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  main section a {
+    display: inline-block;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .How-to {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .how3 {
+    padding-top: 8px;
+    margin-top: 0;
+  }
+
+  .Features {
+    border-top: 1px solid #dee2e6;
+  }
+
+  .first-feature {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  .first-feature img {
+    max-width: 80%;
+  }
+
+  .second-features {
+    grid-template-columns: 1fr;
+    padding: 0;
+    row-gap: 5.2rem;
+    column-gap: 0;
+  }
+
+  .second-features img {
+    max-width: 60%;
+    column-gap: 0;
+
+    justify-items: center;
+  }
+
+  .text-tux {
+    top: 20%;
+    left: 22%;
+  }
+  .text-pants {
+    top: 55%;
+  }
+  .text-shirts {
+    top: 88%;
+    left: 30%;
+  }
+  .Custom-vests {
+    grid-row: 1;
+    display: inline-block;
+  }
+  .text-vests {
+    top: 15%;
+    left: 40%;
+  }
+  .Custom-coats {
+    grid-row: 2;
+  }
+  .text-coats {
+    top: 40%;
+    left: 35%;
+  }
+  .Custom-tie {
+    grid-row: 3;
+  }
+  .text-ties {
+    top: 65%;
+    left: 40%;
+  }
+  .Custom-cuffs {
+    grid-row: 4;
+  }
+  .text-cuffs {
+    top: 90%;
+    left: 35%;
+  }
+
+  .link {
+    margin-top: 3.2rem;
+  }
+
+  .featured-headline {
+    font-size: 1.4rem;
+  }
+
+  .logos-section img {
+    height: 2rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid-footer {
+    column-gap: 2rem;
+    row-gap: 5.2rem;
+  }
+  .logo-col,
+  .contact-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .company-col {
+    grid-column: 1;
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .policy-col {
+    grid-column: 1;
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .account-col {
+    grid-column: 1;
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .copyright {
+    margin-top: 1rem;
+  }
+
+  .contact-col address a:first-child {
+    display: inline-block;
+    margin-top: 1rem;
+  }
 }
 /* FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
