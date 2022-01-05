@@ -36,7 +36,7 @@ mobileBtn.addEventListener("click", function () {
 //FOR SAFARI SMOOTH SCROLLING
 //Get all the link
 const allLinks = document.querySelectorAll("a:link");
-
+console.log(allLinks);
 //Loop through all the links providing them with eventlisteners
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -75,6 +75,42 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+//STICKY NAVIGATION
+const sectionHeroEl = document.querySelector(".Features");
+
+//1st parameter - what we want to happen
+//2nd parameter - options
+const obs = new IntersectionObserver(
+  function (entries) {
+    //entries = number of thresholds
+    //Since i have only 1 threshold that means the number of entries are 1
+    const ent = entries[0];
+    console.log(ent);
+
+    //Once the hero-section is not in the viewport
+    if (ent.isIntersecting === true) {
+      document.querySelector(".logo").classList.add("sticky");
+      document.querySelector(".navigation").classList.add("sticky");
+      document.querySelector(".home").classList.remove("see");
+    }
+
+    if (ent.isIntersecting === false) {
+      document.querySelector(".logo").classList.remove("sticky");
+      document.querySelector(".navigation").classList.remove("sticky");
+      document.querySelector(".home").classList.add("see");
+    }
+  },
+  {
+    //root is basically the bounding area of the element
+    //root = null means in the viewport
+    //so whats happening here is as soon as the navigation passes the hero-section it becomes sticky
+    root: null,
+    //threshold = 0 means as soon as the hero-section is out of the viewport
+    threshold: 0.4,
+  }
+);
+obs.observe(sectionHeroEl);
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

@@ -42,6 +42,7 @@ body {
   line-height: 1;
   font-weight: 400;
   overflow-x: hidden;
+  z-index: 999;
 }
 
 .btn {
@@ -104,6 +105,10 @@ nav a:active {
 .open-mobile-menu[name="menu-outline"] {
   display: none;
 }
+
+.see {
+  visibility: hidden;
+}
 /*******NAVIGATION****/
 
 /******SINGLE COMPONENTS****/
@@ -119,7 +124,7 @@ header {
   position: relative;
 }
 
-.logo-text {
+.logo-link {
   /* position: absolute; */
   /* left: 50%; */
   display: inline-block;
@@ -127,6 +132,7 @@ header {
   left: 40%;
   color: #fff;
   font-size: 10rem;
+  text-decoration: none;
 }
 
 .Hero-Section {
@@ -578,6 +584,16 @@ input::placeholder {
 }
 
 /*******ABOUT US SECTION*******/
+
+/******STICKY NAVIGATION*******/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10rem;
+  z-index: 99999;
+  background-color: rgba(44, 44, 44, 0.356);
+}
 
 /******SINGLE COMPONENTS****/
 
