@@ -33,6 +33,49 @@ mobileBtn.addEventListener("click", function () {
   heroEl.classList.toggle("mobile-nav-open");
 });
 
+//FOR SAFARI SMOOTH SCROLLING
+//Get all the link
+const allLinks = document.querySelectorAll("a:link");
+
+//Loop through all the links providing them with eventlisteners
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    //Get the href attribute from the links
+    const href = link.getAttribute("href");
+
+    //Scroll to the top when clicking the logo text or footer icon
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    if (href === "about.html") {
+      window.location.href = "about.html";
+    }
+    if (href === "Testimonials.html") {
+      window.location.href = "Testimonials.html";
+    }
+    //Scroll to sections when clicking links
+    if (href !== "#" && href.startsWith("#")) {
+      //Get the ID of the section which is also the href attribute in the links
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
+    //Closing navbar when a main-link is clicked, in hamburger mode
+    if (link.classList.contains("main-link")) {
+      //Removing mobile navigation from the header
+      headerEl.classList.toggle("mobile-nav-open");
+      //Removing movile navigation from the hero section
+      heroEl.classList.toggle("mobile-nav-open");
+    }
+  });
+});
+
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*

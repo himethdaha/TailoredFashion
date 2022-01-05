@@ -25,19 +25,23 @@
     <link rel="icon" href="imgs/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
+
+    <!--For Safari smooth scrolling-->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- HEADER SECTION -->
     <header class="header">
         <div class="logo">
-          <p class="logo-text">Tailored</p>
+          <a href="#"><p class="logo-text">Tailored</p></a> 
         </div>
         <nav class="navigation">
           <ul class="main-nav">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#Features-sec">Products</a></li>
-            <li><a href="">Design</a></li>
-            <li><a href="Testimonials.html">Testimonials</a></li>
+            <li><a href="about.html" class="main-link">About Us</a></li>
+            <li><a href="#Features-sec" class="main-link">Products</a></li>
+            <li><a href="" class="main-link">Design</a></li>
+            <li><a href="Testimonials.html" class="main-link">Testimonials</a></li>
           </ul>
         </nav>
         <button class="mobile-nav">
@@ -250,6 +254,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>
