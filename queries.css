@@ -236,9 +236,9 @@
 
 /******FOR PHONES******/
 @media (max-width: 39em) {
-  .logo-text {
+  .logo-link {
     display: inline-block;
-    font-size: 6.2rem;
+    font-size: 7.2rem;
     left: 30%;
   }
 
@@ -248,11 +248,11 @@
 
   .Hero-Section {
     position: absolute;
-    top: 28%;
-    left: 60%;
+    top: 26%;
+    left: 50%;
   }
-  .hero-text {
-    font-size: 1.6rem;
+  main section .Hero-text {
+    font-size: 1.8rem;
     line-height: 1.4;
   }
 
@@ -270,6 +270,9 @@
   .How-to {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+  }
+  .how-to-txt {
+    font-size: 1.4rem;
   }
 
   .how3 {
@@ -306,14 +309,14 @@
 
   .text-tux {
     top: 20%;
-    left: 22%;
+    left: 39%;
   }
   .text-pants {
     top: 55%;
   }
   .text-shirts {
     top: 88%;
-    left: 30%;
+    left: 42%;
   }
   .Custom-vests {
     grid-row: 1;
@@ -321,35 +324,35 @@
   }
   .text-vests {
     top: 15%;
-    left: 40%;
+    left: 46%;
   }
   .Custom-coats {
     grid-row: 2;
   }
   .text-coats {
     top: 40%;
-    left: 35%;
+    left: 40%;
   }
   .Custom-tie {
     grid-row: 3;
   }
   .text-ties {
     top: 65%;
-    left: 40%;
+    left: 42%;
   }
   .Custom-cuffs {
     grid-row: 4;
   }
   .text-cuffs {
     top: 90%;
-    left: 35%;
+    left: 40%;
   }
 
   .link {
     margin-top: 3.2rem;
   }
 
-  .featured-headline {
+  .Featured-in h2 {
     font-size: 1.4rem;
   }
 
@@ -357,12 +360,16 @@
     height: 2rem;
   }
 
+  footer {
+    max-width: 120rem;
+  }
+
   .grid-footer {
     grid-template-columns: repeat(6, 1fr);
   }
 
   .grid-footer {
-    column-gap: 2rem;
+    column-gap: 1rem;
     row-gap: 5.2rem;
   }
   .logo-col,
@@ -393,6 +400,43 @@
   .contact-col address a:first-child {
     display: inline-block;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .logo a {
+    font-size: 3.2rem;
+  }
+
+  .Headline {
+    font-size: 3rem;
+  }
+
+  main section .Hero-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .Hero-Section {
+    position: absolute;
+    top: 28%;
+    left: 16%;
+  }
+  .how-to-txt {
+    font-size: 1.4rem;
+  }
+  .Featured-in h2 {
+    font-size: 1.2rem;
+  }
+  .logos-section img {
+    height: 1.8rem;
+  }
+  .Testimonial-text {
+    font-size: 2rem;
+  }
+  .Customer-img {
+    align-self: center;
+    justify-self: center;
+    height: 50%;
   }
 }
 /* FONT SIZE SYSTEM (px)
